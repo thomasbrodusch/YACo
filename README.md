@@ -23,7 +23,7 @@ Installation
 		$(document).scroll(function(){
         	$('html').yaco();
         });
-
+        
 		// With some options on a specific element
 			$('#anotherDiv').yaco({
 				change: 'background',
