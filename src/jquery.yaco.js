@@ -21,12 +21,12 @@
 			random: false,
 			excludes: false,
 			delay: '0.7s',
-			speed: 'ease' 
+			transition: 'ease' 
 		}, options);
 
 
 		// Set config for transition
-		this.css( "transition", yaco_config.change +' '+ yaco_config.delay +' '+ yaco_config.speed );
+		this.css( "transition", yaco_config.change +' '+ yaco_config.delay +' '+ yaco_config.transition );
 		
 		// Set color 
 		if(typeof(yaco_config.colors) == 'object'){

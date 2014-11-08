@@ -37,21 +37,24 @@ Installation
 Options
 -----------
 > **change**: (string) - Apply the change on background/color/border 
-			>> (ex:'background')
+			
+>> (ex:'background')
 	
 >**colors**: (array) - Pass the set of colors you want to use 
-			>>(ex: ['#1abc9c','#16a085','#3498db'])
+			
+>>(ex: ['#1abc9c','#16a085','#3498db'])
 
 >**excludes**: (array) - You want to excludes some colors
-	>>(ex: ['#1abcd4','#16a085'])
+>>(ex: ['#1abcd4','#16a085'])
 
 >**delay**: (float) 
-	 >>(ex: 0.7)
+>>(ex: 0.7)
 
->**speed**: (string) - Type of css transition 
-	>> (ex:'ease')
+>**transition**: (string) - Css transition 
+>> (ex:'ease')
 
 >**random**: (boolean) - You want a random set of colors ? Set it to true.
-	>>(ex: true)
-			
+>>(ex: true)
+
+
 	
