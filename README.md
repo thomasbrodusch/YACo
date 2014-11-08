@@ -1,4 +1,6 @@
 # YACo - Yes Another COlor !
+Light & simple background/color/border changer jQuery plugin ! 
+
 Contributor: Thomas Brodusch
 
 Version
@@ -40,13 +42,7 @@ Options
 	
 >**colors**: (array) - Pass the set of colors you want to use 
 			>>(ex: ['#1abc9c','#16a085','#3498db'])
-			
->** loadedColor**  
-			>>(ex: '')
 
->** random**: (boolean) - You want a random set of colors ? Set it to true.
-			>>(ex: true)		
-			
 >**excludes**: (array) - You want to excludes some colors
 	>>(ex: ['#1abcd4','#16a085'])
 
@@ -55,5 +51,8 @@ Options
 
 >**speed**: (string) - Type of css transition 
 	>> (ex:'ease')
+
+>**random**: (boolean) - You want a random set of colors ? Set it to true.
+	>>(ex: true)
 			
 	
