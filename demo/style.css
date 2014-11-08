@@ -1,0 +1,39 @@
+html{
+	font-family: Open Sans, helvetica, sans-serif;
+	height: 1000px;
+	}
+body{
+	width: 980px;
+	height:100%;
+	padding-top: 20px;
+	margin:0 auto;
+}
+
+#logo{
+	text-align: center;
+	font-size: 52px;
+	font-family: Helvetica;
+	letter-spacing: -9px;
+	border-bottom: 1px solid black;
+	margin-bottom: 50px;
+}
+	span#sublogo{
+	font-size: 11px;
+	margin-left: 4px;
+	letter-spacing: -1px;
+	font-weight: normal;
+	color: rgba(0, 0, 0, 0.83);
+	}
+
+.demo{
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	background: rgba(255, 255, 255, 0.31);
+	border-radius: 2px;
+	text-align: center;
+	font-size: 10px;
+	text-transform: uppercase;
+	color:white;
+	margin-bottom: 50px;
+}
