@@ -19,12 +19,11 @@ Installation
 > 3.Let **YACo do the rest !**
 ```html
 <script type="text/javascript">
-		// Default background-color change when scroll with nice random Flat colours !
+	// Default background-color change when scroll with nice random Flat colours !
 		$(document).scroll(function(){
         	$('html').yaco();
         });
-        
-		// With some options on a specific element
+	// With some options on a specific element
 			$('#anotherDiv').yaco({
 				change: 'background',
 				colors: ['#3498db','#9b59b6','#34495e'],
