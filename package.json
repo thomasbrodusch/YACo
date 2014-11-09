@@ -6,7 +6,7 @@
   },
   "name": "yaco",
   "description": "YACo - Yes Another COlor! jQuery plugin who changes an element's background/color/border on scrolling and more!",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
         "jquery-plugin",
         "jquery",
