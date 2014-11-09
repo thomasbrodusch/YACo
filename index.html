@@ -10,25 +10,30 @@
     </head>
     <body>
 
+<a href="https://github.com/tom4dev/yaco"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
+
     <div id="logo">
 		<h1>
 			YACo .
-			<span id="sublogo"> Yes Another COlor !</span>
+			<span id="sublogo"> Yes Another COlor</span>
 		</h1>
     </div>
 		
 		
 		
     	<div id="demo-click-default" class="demo">
-    		<h1> Demo > event: click | colors: default | transition: default</h1>
+            <h1> Click me !</h1>
+    		<h4> Event: click | Colors: default | Delay: '0.1s' | Transition: 'ease-in'</h4>
     	</div>
 
     	<div id="demo-mousemove-default" class="demo">
-    		<h1> Demo > event: mouse move | colors: default | transition: default</h1>
+            <h1> Move your cursor inside !</h1>
+    		<h4> Event: 'mousemove' | Colors: default | Delay: 'default' |Transition: 'default'</h4>
     	</div>
 
     	<div id="demo-mouseenter-default" class="demo">
-    		<h1> Demo > event: mouse enter | colors: default | transition: default</h1>
+            <h1> Just put your cursor here !</h1>
+    		<h4> Event: 'mouseenter' | Colors: default | Delay: 'default' | Transition: 'default'</h4>
     	</div>
 
         
@@ -36,24 +41,27 @@
         <script src="src/jquery.yaco.js"></script>
         <script type="text/javascript">
 
-        // Change page background-color when Scroll/MouseMove
+        // Change the page's background-color when Scroll.
         $(document).scroll(function(){
         	$('html').yaco();
         });
 
+        // Change #demo-click-default background-color on click.
         $('#demo-click-default').click(function( event ) {
         	$(this).yaco({
 				change: 'background',
-				colors: ['#3498db','#9b59b6','#34495e'],
+				colors: ['#3498db','#9b59b6','#34495e', 'black', 'orange'],
 				delay: '0.1s',
 				transition: 'ease-in'
 			});
         });
 
+        // Change #demo-mousemove-default background-color on mouse move inside.
         $('#demo-mousemove-default').mousemove(function( event ) {
         	$(this).yaco();
         });
 
+        // Change #demo-mouseenter-default background-color on mouse enter.
         $('#demo-mouseenter-default').mouseenter(function( event ) {
         	$(this).yaco();
         });
