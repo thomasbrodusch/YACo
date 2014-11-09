@@ -3,6 +3,8 @@
     "title": "YACo - Yes Another COlor !",
     "description": "Light and simply background-color/color changer jQuery plugin ! ",
     "keywords": [
+        "YACo",
+        "yaco",
         "color",
         "animation",
         "scroll",
@@ -22,7 +24,7 @@
     "version": "0.0.1",
     "author": {
         "name": "Thomas Brodusch",
-        "url": "https://github.com/tom4dev/yaco/blob/master/README"
+        "url": "https://github.com/tom4dev/YACo/blob/master/README"
     },
     "maintainers": [
         {
@@ -33,13 +35,13 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/tom4dev/yaco/blob/master/LICENSE"
+            "url": "https://github.com/tom4dev/YACo/blob/master/LICENSE"
         }
     ],
-    "bugs": "https://github.com/tom4dev/yaco/issues",
-    "homepage": "https://github.com/tom4dev/yacoc",
-    "docs": "https://github.com/tom4dev/yaco",
-    "download": "http://code.jquery.com/#yaco",
+    "bugs": "https://github.com/tom4dev/YACo/issues",
+    "homepage": "https://github.com/tom4dev/YACo",
+    "docs": "https://github.com/tom4dev/YACo",
+    "download": "http://code.jquery.com/#YACo",
     "dependencies": {
         "jquery": ">=1.5"
     }
