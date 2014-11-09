@@ -32,7 +32,7 @@
 		if(typeof(yaco_config.colors) == 'object'){
 			 yaco_config.loadedColor = yaco_config.colors[Math.floor((Math.random() * yaco_config.colors.length) + 0)];
 		}
-		if(yaco_config.random == true) yaco_config.loadedColor = randomColor();	
+		if(yaco_config.random == true) yaco_config.loadedColor = '#'+Math.floor(Math.random()*16777215).toString(16);	
 
 
 		// Change color !
