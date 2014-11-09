@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>yaco - Yes Another COlor Changer - Demo</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+
+    <div id="logo">
+		<h1>
+			YACo .
+			<span id="sublogo"> Yes Another COlor !</span>
+		</h1>
+    </div>
+		
+		
+		
+    	<div id="demo-click-default" class="demo">
+    		<h1> Demo > event: click | colors: default | transition: default</h1>
+    	</div>
+
+    	<div id="demo-mousemove-default" class="demo">
+    		<h1> Demo > event: mouse move | colors: default | transition: default</h1>
+    	</div>
+
+    	<div id="demo-mouseenter-default" class="demo">
+    		<h1> Demo > event: mouse enter | colors: default | transition: default</h1>
+    	</div>
+
+        
+        
+        <script src="../src/jquery.yaco.js"></script>
+        <script type="text/javascript">
+
+        // Change page background-color when Scroll/MouseMove
+        $(document).scroll(function(){
+        	$('html').yaco();
+        });
+
+        $('#demo-click-default').click(function( event ) {
+        	$(this).yaco({
+				change: 'background',
+				colors: ['#3498db','#9b59b6','#34495e'],
+				delay: '0.1s',
+				transition: 'ease-in'
+			});
+        });
+
+        $('#demo-mousemove-default').mousemove(function( event ) {
+        	$(this).yaco();
+        });
+
+        $('#demo-mouseenter-default').mouseenter(function( event ) {
+        	$(this).yaco();
+        });
+        
+        </script>
+    </body>
+</html>
