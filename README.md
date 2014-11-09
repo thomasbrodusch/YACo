@@ -43,7 +43,7 @@ Installation
 				change: 'background',
 				colors: ['#3498db','#9b59b6','#34495e'],
 				delay: '0.8s',
-				speed: 'ease'
+				transition: 'ease'
 			});
 	</script>
 ```
