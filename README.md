@@ -1,7 +1,7 @@
 # YACo - Yes Another COlor !
 Light & simple background/color/border changer jQuery plugin ! 
 
-![ScreenShot](http://raw.githubusercontent.com/tom4dev/YACo/gh-pages/logo.png "Logo YACo")
+![ScreenShot](http://raw.githubusercontent.com/tom4dev/YACo/gh-pages/logo.png)
 
 
 
