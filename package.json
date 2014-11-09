@@ -1,7 +1,11 @@
 {
-  "author": "Thomas Brodusch <brodusch.thomas@gmail.com>",
-  "name": "YACo - Yes Another COlor!",
-  "description": "jQuery plugin who changes an element's background/color/border on scrolling and more!",
+  "author": {
+    "name": "Thomas Brodusch",
+    "email": "brodusch.thomas@gmail.com",
+    "url": "https://github.com/tom4dev"
+  },
+  "name": "yaco",
+  "description": "YACo - Yes Another COlor! jQuery plugin who changes an element's background/color/border on scrolling and more!",
   "version": "0.0.1",
   "keywords": [
         "jquery-plugin",
@@ -26,16 +30,22 @@
         "design"
   ],
   "repository": {
+    "type": "git",
     "url": "https://github.com/tom4dev/YACo"
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/tom4dev/YACo/issues"
   },
-  "homepage":{
+  "homepage": {
       "url": "http://tom4dev.github.io/YACo/"
   },
   "dependencies": {
-    "jquery": ">= 1.4.x",
+    "jquery": ">= 1.4.x"
   },
-   "license": "MIT"
+   "license":  [
+     {
+            "type": "MIT",
+            "url": "https://github.com/tom4dev/YACo/blob/master/LICENSE"
+    }
+   ]
 }

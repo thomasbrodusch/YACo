@@ -22,9 +22,14 @@ Installation
 > 1. Load **jQuery**
 	
 > 2. Load **YACo.js**
+
+>``npm install yaco``
+
 ```html
 	<script src="../src/jquery.yaco.js"></script>
 ```
+
+
 
 > 3.Let **YACo do the rest !**
 ```html
