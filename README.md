@@ -15,7 +15,7 @@ Author: Thomas Brodusch
 
 Version
 ---------
-0.0.1
+1.0.0 - (9 november 2014)
 
 Installation
 -------------
