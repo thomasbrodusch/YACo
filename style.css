@@ -1,6 +1,6 @@
 html{
 	font-family: Open Sans, helvetica, sans-serif;
-	height: 1000px;
+	height: 2000px;
 	}
 body{
 	max-width: 980px;
@@ -8,6 +8,8 @@ body{
 	padding-top: 20px;
 	margin:0 auto;
 }
+
+
 
 #logo{
 	text-align: center;
@@ -36,6 +38,12 @@ body{
 	font-weight: normal;
 	color: rgba(255, 255, 255, 0.65);
 	}
+
+#intro{
+	color: white;
+	border-bottom: 4px solid white;
+	padding-bottom: 40px;
+}
 
 .demo{
 	height: 100px;
