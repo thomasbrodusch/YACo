@@ -1,7 +1,7 @@
 (function ( $ ) {
 	$.fn.yaco = function(options) {
 		var yaco_config = $.extend({
-			change: 'background',
+			change: ['background'],
 			colors: [
 				'#1abc9c',
 				'#16a085',
@@ -35,7 +35,9 @@
 		if(yaco_config.random == true) yaco_config.loadedColor = '#'+Math.floor(Math.random()*16777215).toString(16);	
 
 
-		// Change color !
-		this.css( yaco_config.change , yaco_config.loadedColor );	
+		// Change color for each type!
+		for (var key in yaco_config.change) {
+			this.css( yaco_config.change[key] , yaco_config.loadedColor );	
+		};
 	};
 }( jQuery ));

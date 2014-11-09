@@ -40,7 +40,7 @@ Installation
         });
 	// With some options on a specific element
 			$('#anotherDiv').yaco({
-				change: 'background',
+				change: ['border','color'],
 				colors: ['#3498db','#9b59b6','#34495e'],
 				delay: '0.8s',
 				transition: 'ease'
@@ -51,9 +51,9 @@ Installation
 
 Options
 -----------
-> **change**: (string) - Apply the change on background/color/border 
+> **change**: (array) - Apply the change on background/color/border 
 			
->> (ex:'background')
+>> (ex:['background', 'border'])
 	
 >**colors**: (array) - Pass the set of colors you want to use 
 			
