@@ -16,13 +16,23 @@ body{
 	letter-spacing: -9px;
 	border-bottom: 1px solid black;
 	margin-bottom: 50px;
+	height: 360px;
+	background: url(yaco.png)no-repeat center bottom;
+	background-size: 52%; 
 }
+	#logo h1{
+	padding: 300px 95px 0 0;
+	margin: 0px;
+	font-size: 52px;
+	font-family: Helvetica;
+	letter-spacing: -6px;
+	}
 	span#sublogo{
 	font-size: 11px;
 	margin-left: 4px;
 	letter-spacing: -1px;
 	font-weight: normal;
-	color: rgba(0, 0, 0, 0.83);
+	color: rgba(255, 255, 255, 0.65);
 	}
 
 .demo{
