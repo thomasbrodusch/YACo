@@ -14,20 +14,21 @@ body{
 	font-size: 52px;
 	font-family: Helvetica;
 	letter-spacing: -9px;
-	border-bottom: 1px solid black;
+	border-bottom: 4px solid white;
 	margin-bottom: 50px;
-	height: 360px;
+	height: 290px;
 	background: url(yaco.png)no-repeat center bottom;
-	background-size: 52%; 
+	background-size: 415px; 
 	color:white;
 }
 	#logo h1{
-	padding: 300px 95px 0 0;
+		padding: 242px 86px 0 0;
 	margin: 0px;
-	font-size: 52px;
+	font-size: 40px;
 	font-family: Helvetica;
 	letter-spacing: -6px;
 	}
+	
 	span#sublogo{
 	font-size: 11px;
 	margin-left: 4px;
