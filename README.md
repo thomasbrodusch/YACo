@@ -1,4 +1,6 @@
 # YACo - Yes Another COlor !
+[![npm version](https://badge.fury.io/js/yaco.svg)](http://badge.fury.io/js/yaco)
+
 Change background / color / border on scroll and more !
 
 Just a simple and light background/color/border changer jQuery plugin.
@@ -15,7 +17,13 @@ Author: Thomas Brodusch
 
 Version
 ---------
-1.0.0 - (9 november 2014)
+1.1.0 "Ara Ararauna" - (13 november 2014)
+
+Workflow
+----------
+	## 1.1.0 - "Ara Ararauna"
+		- <strike>Optional linking colors to particular elements. When you reach a certain div, the background color change ! 
+		you can define a div by add in html markup of the specific div: 'data-yaco=true' (and associate a color) 'data-color-yaco="#22A7F0" '</strike>
 
 Installation
 -------------
@@ -29,20 +37,29 @@ Installation
 	<script src="../src/jquery.yaco.js"></script>
 ```
 
+> 3. Define your "YACo div" (don't forget to set "data-yaco" at "true", and define a color of your choice in "data-yaco-color" !)
+```html
+ <div id="firstDiv" data-yaco="true" data-yaco-color="#22A7F0"></div>
+ <div id="secondDiv" data-yaco="true" data-yaco-color="#6C7A89"></div>
+```
 
-
-> 3.Let **YACo do the rest !**
+> 4.Let **YACo do the rest !**
 ```html
 <script type="text/javascript">
-	// Default background-color change when scroll with nice random Flat colours !
-		$(document).scroll(function(){
-        	$('html').yaco();
-        });
-	// With some options on a specific element
+	/*  Default behaviour of YACo - Change current page's background-color when reach specific div on scroll !
+    *   Works with data attributes in html markup, easy as 1,2,3 !
+    *   Be sure you have defined a yaco div to reach. (ex: [data-yaco="true"] )
+    *   Be sure you have defined the changed color when the div is reach. (ex: [data-yaco-color="black"])
+    */
+        $('html').yaco();
+	// If you want to use YACo with some specifics options, on a specific element:
+	*	DON'T FORGET to set 'default' parameter to 'false'
+	*/
 			$('#anotherDiv').yaco({
+				default: false,
 				change: ['border','color'],
 				colors: ['#3498db','#9b59b6','#34495e'],
-				delay: '0.8s',
+				delay: 0.8,
 				transition: 'ease'
 			});
 	</script>
@@ -51,6 +68,10 @@ Installation
 
 Options
 -----------
+> **default**: (boolean) - Enable/disable default behaviour of YACo.
+
+>> (ex:false)
+
 > **change**: (array) - Apply the change on background/color/border 
 			
 >> (ex:['background', 'border'])
