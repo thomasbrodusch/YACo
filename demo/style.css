@@ -1,42 +1,53 @@
 html{
 	font-family: Open Sans, helvetica, sans-serif;
-	height: 1000px;
+	background: rgb(135, 95, 154);
 	}
 body{
-	width: 980px;
+	max-width: 980px;
 	height:100%;
 	padding-top: 20px;
 	margin:0 auto;
+	text-align: center;
 }
+
+
 
 #logo{
 	text-align: center;
 	font-size: 52px;
 	font-family: Helvetica;
 	letter-spacing: -9px;
-	border-bottom: 1px solid black;
+	border-bottom: 4px solid white;
 	margin-bottom: 50px;
-	height: 360px;
+	height: 290px;
 	background: url(yaco.png)no-repeat center bottom;
-	background-size: 52%; 
+	background-size: 415px; 
+	color:white;
 }
 	#logo h1{
-	padding: 300px 95px 0 0;
-	margin: 0px;
-	font-size: 52px;
-	font-family: Helvetica;
-	letter-spacing: -6px;
+		padding: 246px 79px 0 0;
+		margin: 0px;
+		font-size: 40px;
+		font-family: Helvetica;
+		letter-spacing: -6px;
 	}
+	
 	span#sublogo{
 	font-size: 11px;
 	margin-left: 4px;
-	letter-spacing: -1px;
+	letter-spacing: 0px;
 	font-weight: normal;
 	color: rgba(255, 255, 255, 0.65);
 	}
 
+#intro{
+	color: white;
+	border-bottom: 4px solid white;
+	padding-bottom: 40px;
+}
+
 .demo{
-	height: 100px;
+	padding: 0 0 10px 0;
 	width: 100%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.31);
@@ -47,3 +58,11 @@ body{
 	color:white;
 	margin-bottom: 50px;
 }
+	.demo h1{
+		padding-top: 33px;
+		letter-spacing: -2px;
+	}	
+
+#demo-reach-black{margin-bottom: 300px;}
+
+#demo-reach-blue{margin-bottom: 800px;}
