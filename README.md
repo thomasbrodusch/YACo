@@ -52,7 +52,7 @@ Installation
     *   Be sure you have defined the changed color when the div is reach. (ex: [data-yaco-color="black"])
     */
         $('html').yaco();
-	// If you want to use YACo with some specifics options, on a specific element:
+	/* If you want to use YACo with some specifics options, on a specific element:
 	*	DON'T FORGET to set 'default' parameter to 'false'
 	*/
 			$('#anotherDiv').yaco({
