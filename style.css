@@ -1,6 +1,5 @@
 html{
 	font-family: Open Sans, helvetica, sans-serif;
-	height: 2000px;
 	background: rgb(135, 95, 154);
 	}
 body{
@@ -48,7 +47,7 @@ body{
 }
 
 .demo{
-	height: 100px;
+	padding: 0 0 10px 0;
 	width: 100%;
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.31);
@@ -62,5 +61,8 @@ body{
 	.demo h1{
 		padding-top: 33px;
 		letter-spacing: -2px;
-}
-	
+	}	
+
+#demo-reach-black{margin-bottom: 300px;}
+
+#demo-reach-blue{margin-bottom: 800px;}

@@ -13,10 +13,10 @@
 <a href="https://github.com/tom4dev/yaco"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6286ade715e9bea433b4705870de482a654f78a/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_white_ffffff.png"></a>
 
     <div id="logo">
-		<h1>
-			YACo .
-			<span id="sublogo"> Yes Another COlor</span>
-		</h1>
+        <h1>
+            YACo .
+            <span id="sublogo"> Yes Another COlor</span>
+        </h1>
     </div>
 
     <div id="intro">
@@ -26,52 +26,71 @@
         </p>
         <h3>Just Scroll down ;)</h3>
     </div>
-		
-		
-		
-    	<div id="demo-click-default" class="demo">
-            <h1> Click me !</h1>
-    		<h4> Event: click | Colors: default | Delay: '0.1s' | Transition: 'ease-in'</h4>
-    	</div>
+        
+        
+        
+        <div id="demo-click-default" class="demo" data-yaco="true" data-yaco-color="#26A65B">
+            <h1> Click me  <h2>(OR  Reach me !)</h2></h1>
+            <h4> Event: click | Colors: default | Delay: '0.1s' | Transition: 'ease-in'</h4>
+            <h4> Changed Colors when i'm reach: <span style="background:#26A65B;padding:2px; ">#26A65B </span>| Delay: default | Transition: default</h4>
+        </div>
 
-    	<div id="demo-mousemove-default" class="demo">
-            <h1> Move your cursor inside !</h1>
-    		<h4> Event: 'mousemove' | Colors: default | Delay: 'default' |Transition: 'default'</h4>
-    	</div>
+        <div id="demo-mousemove-default" class="demo" data-yaco="true" data-yaco-color="#22A7F0">
+            <h1> Move & stop your cursor inside !<h2>(OR  Reach me !)</h2></h1>
+            <h4> Event: 'mousemove' | Colors: default | Delay: 'default' |Transition: 'default'</h4>
+            <h4> Changed color when i'm reach: <span style="background:#22A7F0;padding:3px; "> #22A7F0 </span> | Delay: default | Transition: default</h4>
 
-    	<div id="demo-mouseenter-default" class="demo">
-            <h1> Just put your cursor here !</h1>
-    		<h4> Event: 'mouseenter' | Colors: default | Delay: 'default' | Transition: 'default'</h4>
-    	</div>
+        </div>
+
+        <div id="demo-mouseenter-default" class="demo" data-yaco="true" data-yaco-color="orange">
+            <h1> Enter your cursor here!<h2>(OR  Reach me !)</h2></h1>
+            <h4> Event: 'mouseenter' | Colors: default | Delay: 'default' | Transition: 'default'</h4>
+            <h4> Changed color when i'm reach: <span style="background:orange;padding:3px; "> orange </span> | Delay: default | Transition: default</h4>
+
+        </div>
+
+         <div id="demo-reach-black" class="demo" data-yaco="true" data-yaco-color="black">
+            <h1> Just Reach me !</h1>
+            <h4> Changed color when i'm reach: <span style="background:black;padding:3px;color:white; "> black </span>| Delay: default | Transition: default</h4>
+        </div>
+
+        <div id="demo-reach-blue" class="demo" data-yaco="true" data-yaco-color="#6C7A89">
+            <h1> Just Reach me !</h1>
+            <h4> Changed color when i'm reach: <span style="background:#6C7A89 ;padding:3px; "> #6C7A89  </span>| Delay: default | Transition: default</h4>
+        </div>
+
 
         
         
         <script src="//rawgithub.com/tom4dev/YACo/master/src/jquery.yaco.js"></script>
         <script type="text/javascript">
 
-        // Change the page's background-color when Scroll.
-        $(document).scroll(function(){
-        	$('html').yaco();
-        });
+        /*  Change the page's background-color when reach specific div on scroll.
+        *   Works with data attributes in html markup, simply as 1,2,3 !
+        *   Define a div to reach: [data-yaco="true"] 
+        *   Define the changed color when the div reach the top: [data-yaco-color="black"]
+        */
+            $('html').yaco();
 
         // Change #demo-click-default background-color on click.
         $('#demo-click-default').click(function( event ) {
-        	$(this).yaco({
-				change: ['background'],
-				colors: ['#3498db','#9b59b6','#34495e', 'black', 'orange'],
-				delay: '0.2s',
-				transition: 'ease-in'
-			});
+            $(this).yaco({
+                default: false,
+                change: ['background'],
+                colors: ['#3498db','#9b59b6','#34495e', 'black', 'orange'],
+                delay: 0.2,
+                transition: 'ease-in'
+            });
         });
 
         // Change #demo-mousemove-default background-color on mouse move inside.
         $('#demo-mousemove-default').mousemove(function( event ) {
-        	$(this).yaco();
+            $(this).yaco({default:false});
         });
 
         // Change #demo-mouseenter-default background-color on mouse enter.
         $('#demo-mouseenter-default').mouseenter(function( event ) {
-        	$(this).yaco();
+            $(this).yaco({default:false});
         });
         
         </script>
