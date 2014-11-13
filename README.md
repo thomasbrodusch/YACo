@@ -22,8 +22,8 @@ Version
 Workflow
 ----------
 	## 1.1.0 - "Ara Ararauna"
-		- <strike>Optional linking colors to particular elements. When you reach a certain div, the background color change ! 
-		you can define a div by add in html markup of the specific div: 'data-yaco=true' (and associate a color) 'data-color-yaco="#22A7F0" '</strike>
+		- Optional linking colors to particular elements. When you reach a certain div, the background color change ! 
+		you can define a div by add in html markup of the specific div: 'data-yaco=true' (and associate a color) 'data-color-yaco="#22A7F0" '
 
 Installation
 -------------
